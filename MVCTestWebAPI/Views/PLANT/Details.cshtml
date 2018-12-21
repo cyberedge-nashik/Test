@@ -1,0 +1,58 @@
+﻿@model MVCTestWebAPI.Models.M_PLANT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>M_PLANT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PLANT_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLANT_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GSTNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GSTNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScheduleYN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScheduleYN)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PLANT }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

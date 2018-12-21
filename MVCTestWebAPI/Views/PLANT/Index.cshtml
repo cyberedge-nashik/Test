@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MVCTestWebAPI.Models.M_PLANT>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<p>
+
+    <a href="@Url.Action("Create")" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> Create New</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PLANT_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GSTNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegionCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScheduleYN)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PLANT_NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GSTNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegionCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScheduleYN)
+            </td>
+            <td>
+                <a href="@Url.Action("Edit",new { id = @item.PLANT})" class="btn btn-default"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                <a href="#" onclick="Delete(@item.PLANT)" class="btn btn-default"><i class="glyphicon glyphicon-trash"></i> Delete</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var message = '@TempData["Message"]';
+            if (message != '')
+                alertify.success(message);
+        })
+        function Delete(id)
+        {
+            alertify.confirm("Are you sure to delete this record?",function(){
+                window.location.href = '@Url.Action("Delete")/' + id;
+            },null);
+        }
+    </script>
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1e3f101fa8e146c59a4f0ebba3c2cf4b" Name="Diagram1">
+        <EntityTypeShape EntityType="IRPLModel.M_FinYear" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_Forms" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_HSN_Control" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_MACID" Width="1.5" PointX="8" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_PLANT" Width="1.5" PointX="2.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_PO_OPBalance" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_SysPara" Width="1.5" PointX="9.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_System_Parameter" Width="1.5" PointX="9.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_TAX" Width="1.5" PointX="9.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_UnitToBeInteger" Width="1.5" PointX="2.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_User_MacID" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_User_MacID_Det" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_UserFormMapping" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_VENDOR" Width="1.5" PointX="5.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_AIN_DOCNO" Width="1.5" PointX="10.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_INVOICE_DETAIL" Width="1.5" PointX="11.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_INVOICE_HEAD" Width="1.5" PointX="12.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_PO" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_PO_SchDailyDetail" Width="1.5" PointX="13.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_PO_SchMonthlyWeeklyDetail" Width="1.5" PointX="2.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_SMSLOG" Width="1.5" PointX="14.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.User" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.M_PO_OPBalance_04NOV2017" Width="1.5" PointX="14.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.PODB20171004121158_04OCT2017_6001" Width="1.5" PointX="14.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_INV_UNPOSTED" Width="1.5" PointX="7.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_InvoiceDetailDeleteByUser" Width="1.5" PointX="9.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_InvoiceDetailDeleteByVendor" Width="1.5" PointX="16.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_InvoiceHeadDeleteByUser" Width="1.5" PointX="16.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.T_InvoiceHeadDeleteByVendor" Width="1.5" PointX="18.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IRPLModel.VEN_MOBILE_NO" Width="1.5" PointX="18.75" PointY="16.25" IsExpanded="true" />
+        <AssociationConnector Association="IRPLModel.FK_M_UserFormMapping_M_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="IRPLModel.FK__M_MACID__Vendor___27F8EE98" ManuallyRouted="false" />
+        <AssociationConnector Association="IRPLModel.FK_M_User_MacID_Det_M_User_MacID" ManuallyRouted="false" />
+        <AssociationConnector Association="IRPLModel.FK_M_User_MacID_User" ManuallyRouted="false" />
+        <AssociationConnector Association="IRPLModel.FK_M_UserFormMapping_M_UserFormMapping" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
