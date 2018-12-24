@@ -26,5 +26,9 @@ namespace MVCTestWebAPI.Controllers
 
             return View();
         }
+        public ActionResult t()
+        {
+            return View();
+        }
     }
 }
