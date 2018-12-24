@@ -1,0 +1,6 @@
+language: csharp
+solution: WebApi.sln
+install:
+  - nuget restore WebApi.sln
+script:
+  - xbuild /p:Configuration=Release WebApi.sln
