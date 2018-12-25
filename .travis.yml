@@ -1,10 +1,15 @@
 language: csharp
-os:
-  - linux
-  - osx
 solution: WebApi.sln
-mono:
-  - latest
-install:
-  - sudo apt-get install -y gtk-sharp2
-  - nuget restore WebApi.sln
+
+  
+  
+#  language: csharp
+#os:
+#  - linux
+#  - osx
+#solution: WebApi.sln
+#mono:
+#  - latest
+#install:
+#  - sudo apt-get install -y gtk-sharp2
+#  - nuget restore WebApi.sln
