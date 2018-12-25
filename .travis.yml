@@ -1,9 +1,9 @@
 language: csharp
 solution: WebApi.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./build.sh
+mono:
+  - latest
 install:
-  - nuget restore WebApi.sln
-  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release WebApi.sln
-  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./WebApi/bin/WebApi.dll
-  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./MVCTestWebAPI/bin/MVCTestWebAPI.dll
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore solution-name.sln
